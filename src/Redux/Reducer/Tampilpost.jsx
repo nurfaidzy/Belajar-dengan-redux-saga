@@ -1,4 +1,9 @@
-import { AMBIL_POST, KIRIMPOST, POSTGAGAL } from "../Action/PostAction";
+import {
+  AMBIL_POST,
+  KIRIMPOST,
+  POSTGAGAL,
+  BERHASIL_UBAH,
+} from "../Action/PostAction";
 
 const res = {
   sipost: [],
@@ -25,6 +30,12 @@ const TampilPost = (state = res, action) => {
       return {
         ...state,
         ndakbisa: true,
+      };
+    case BERHASIL_UBAH:
+      state.sipost.splice(action.payload.id - 1, 1, action.payload);
+      return {
+        ...state,
+        sipost: state.sipost,
       };
     default:
       return state;
