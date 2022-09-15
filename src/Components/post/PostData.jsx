@@ -27,8 +27,6 @@ const PostData = () => {
 
   const dispatch = useDispatch();
   const item = useSelector((state) => state.TampilPost);
-  console.log(item);
-
   useEffect(() => {
     dispatch(ambilpost());
   }, [dispatch]);

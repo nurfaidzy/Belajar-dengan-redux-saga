@@ -4,7 +4,6 @@ import { SUDAH_DIHAPUS } from "../../Action/PostAction";
 
 function* menghapoes(Action) {
   const { payload } = Action;
-  console.log(payload);
   try {
     yield axios.delete("https://jsonplaceholder.typicode.com/posts/" + payload);
     yield put({ type: SUDAH_DIHAPUS, payload: payload });
