@@ -4,6 +4,7 @@ import {
   POSTGAGAL,
   BERHASIL_UBAH,
   SUDAH_DIHAPUS,
+  BERHASIL_NAMBAH,
 } from "../Action/PostAction";
 
 const res = {
@@ -42,6 +43,11 @@ const TampilPost = (state = res, action) => {
       return {
         ...state,
         sipost: state.sipost.filter((sipost) => sipost.id !== action.payload),
+      };
+    case BERHASIL_NAMBAH:
+      return {
+        ...state,
+        sipost: [...state.sipost, action.payload],
       };
     default:
       return state;
