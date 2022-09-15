@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Belajar-dengan-redux-saga/static/css/main.f74a7d43.css",
-    "main.js": "/Belajar-dengan-redux-saga/static/js/main.b1be2fd9.js",
+    "main.css": "/Belajar-dengan-redux-saga/static/css/main.e1fdaa96.css",
+    "main.js": "/Belajar-dengan-redux-saga/static/js/main.e514fbee.js",
     "static/js/787.a879903f.chunk.js": "/Belajar-dengan-redux-saga/static/js/787.a879903f.chunk.js",
     "index.html": "/Belajar-dengan-redux-saga/index.html",
-    "main.f74a7d43.css.map": "/Belajar-dengan-redux-saga/static/css/main.f74a7d43.css.map",
-    "main.b1be2fd9.js.map": "/Belajar-dengan-redux-saga/static/js/main.b1be2fd9.js.map",
+    "main.e1fdaa96.css.map": "/Belajar-dengan-redux-saga/static/css/main.e1fdaa96.css.map",
+    "main.e514fbee.js.map": "/Belajar-dengan-redux-saga/static/js/main.e514fbee.js.map",
     "787.a879903f.chunk.js.map": "/Belajar-dengan-redux-saga/static/js/787.a879903f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f74a7d43.css",
-    "static/js/main.b1be2fd9.js"
+    "static/css/main.e1fdaa96.css",
+    "static/js/main.e514fbee.js"
   ]
 }
