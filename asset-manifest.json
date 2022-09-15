@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Belajar-dengan-redux-saga/static/css/main.f74a7d43.css",
+    "main.js": "/Belajar-dengan-redux-saga/static/js/main.a0784607.js",
+    "static/js/787.a879903f.chunk.js": "/Belajar-dengan-redux-saga/static/js/787.a879903f.chunk.js",
+    "index.html": "/Belajar-dengan-redux-saga/index.html",
+    "main.f74a7d43.css.map": "/Belajar-dengan-redux-saga/static/css/main.f74a7d43.css.map",
+    "main.a0784607.js.map": "/Belajar-dengan-redux-saga/static/js/main.a0784607.js.map",
+    "787.a879903f.chunk.js.map": "/Belajar-dengan-redux-saga/static/js/787.a879903f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f74a7d43.css",
+    "static/js/main.a0784607.js"
+  ]
+}
