@@ -23,7 +23,7 @@ const TampilPost = (state = res, action) => {
     case KIRIMPOST:
       return {
         ...state,
-        sipost: action.payload,
+        sipost: [...state.sipost, action.payload.data],
         waiting: false,
         ndakbisa: false,
       };
