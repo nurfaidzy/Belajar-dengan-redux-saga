@@ -7,7 +7,7 @@ import validasiubah from "./validasiubah";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 
-import { ubahdata } from "../../Redux/Action/PostAction";
+import { ubahdata, hapuscuy } from "../../Redux/Action/PostAction";
 
 const PostData = () => {
   const [noedit, setNoedit] = useState(null);
@@ -66,9 +66,23 @@ const PostData = () => {
                     />
                     {errors.body && <p>{errors.body.message}</p>}
                     <div className="py-[5%]"></div>
-                    <div className="flex justify-end">
-                      <input type="submit" value="submit" />
-                      <input type="reset" value="reset" />
+                    <div className="flex justify-end gap-3">
+                      <input
+                        className="p-2 bg-blue-400 rounded-md font-bold"
+                        type="submit"
+                        value="submit"
+                      />
+                      <input
+                        className="p-2 bg-red-400 rounded-md font-bold"
+                        type="reset"
+                        value="reset"
+                      />
+                      <input
+                        className="p-2 bg-green-400 rounded-md font-bold"
+                        type="button"
+                        value="Kembali"
+                        onClick={() => setNoedit(null)}
+                      />
                       {/* <button className="p-2 bg-blue-400 rounded-md font-bold">
                         Change
                       </button> */}
@@ -88,7 +102,12 @@ const PostData = () => {
                   >
                     Change
                   </button>
-                  <button className="p-2 bg-red-400 rounded-lg">Delate</button>
+                  <button
+                    className="p-2 bg-red-400 rounded-lg "
+                    onClick={() => dispatch(hapuscuy(x.id))}
+                  >
+                    Delate
+                  </button>
                 </div>
               </>
             )}

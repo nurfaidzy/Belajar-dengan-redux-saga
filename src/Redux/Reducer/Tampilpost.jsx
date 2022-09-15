@@ -3,6 +3,7 @@ import {
   KIRIMPOST,
   POSTGAGAL,
   BERHASIL_UBAH,
+  SUDAH_DIHAPUS,
 } from "../Action/PostAction";
 
 const res = {
@@ -36,6 +37,11 @@ const TampilPost = (state = res, action) => {
       return {
         ...state,
         sipost: state.sipost,
+      };
+    case SUDAH_DIHAPUS:
+      return {
+        ...state,
+        sipost: state.sipost.filter((sipost) => sipost.id !== action.payload),
       };
     default:
       return state;
