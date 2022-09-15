@@ -7,9 +7,6 @@ const Navbar = () => {
           <li className="px-2">
             <a href="/">Test 1</a>
           </li>
-          <li className="px-2">
-            <a href="/all">Test 2</a>
-          </li>
         </ol>
       </div>
     </div>

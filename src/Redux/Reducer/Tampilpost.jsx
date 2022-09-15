@@ -24,7 +24,7 @@ const TampilPost = (state = res, action) => {
       return {
         ...state,
         sipost: [...state.sipost, action.payload.data],
-        waiting: false,
+        waiting: state.sipost.length < 99 && true,
         ndakbisa: false,
       };
     case POSTGAGAL:
